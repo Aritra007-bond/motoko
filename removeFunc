@@ -1,0 +1,13 @@
+import List "mo:base/List";
+
+actor {
+  public func remove(index : Nat) {
+      let listFront = List.take(List<x>, index);
+      let listBack = List.drop(List<x>, index + 1);
+      List<x> := List.append(listFront, listBack);
+    };
+  
+  };
+  
+  
+  // this is a function for the removing a element from a list using the index as input in a parameter...
